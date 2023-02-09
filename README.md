@@ -4,13 +4,13 @@
 
 ### **By: Chikodi Merenu**
 
-#### [LinkedIn](www.linkedin.com/in/chikodimerenu)
-
-#### [Github](https://github.com/)
+#### [LinkedIn](www.linkedin.com/in/chikodimerenu) | [Github](https://github.com/) | [Trello](https://trello.com/b/EMkbGGin/project-2)
 
 ---
 
 ## **_Description_**
+
+### ![](https://images.solecollector.com/complex/image/upload/nvbc0dkfdlansl5hvqfq.jpg)
 
 ####
 
@@ -29,7 +29,7 @@
 
 ### **Objective**
 
-### To track of all the items one has in their closet, to be able to imagine outfits before actually wearing it.
+### To track of all the items one has in their closet.
 
 ### **Flow**
 
@@ -45,11 +45,11 @@
 
 ### **_Screenshots_**
 
-#### ** Home Screen**
+<!-- #### ** Home Screen** -->
 
 <!-- #### ![Image]() -->
 
-#### ** Wardrobe Screens**
+<!-- #### ** Wardrobe Screens** -->
 
 <!-- #### ![Image]() -->
 
@@ -59,16 +59,14 @@
 
 ## **Future Updates:**
 
-- [ ] Feature that help clients put clothing items together
-- [ ]
-- [ ]
+- [ ] Feature that help clients put clothing items together (Suggestions)
 
 ---
 
 ## **Credits**
 
-### **Images:** []()
+### **Images:** [Sole Collector](https://solecollector.com/news/2015/09/celebrity-sneaker-closets)
 
 <!-- ### **Images:** []() -->
 
-### **Background Image:** []()
+<!-- ### **Background Image:**  -->
