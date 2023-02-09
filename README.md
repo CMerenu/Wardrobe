@@ -1,4 +1,4 @@
-# ** Wardrobe **
+# Wardrobe
 
 ## **Date 2/09/2023**
 
@@ -45,15 +45,15 @@
 
 ### **_Screenshots_**
 
-#### **Instruction Screen**
+#### ** Home Screen**
 
-#### ![Image]()
+<!-- #### ![Image]() -->
 
-#### **Game play Screens**
+#### ** Wardrobe Screens**
 
-#### ![Image]()
+<!-- #### ![Image]() -->
 
-#### ![Image]()
+<!-- #### ![Image]() -->
 
 ---
 
