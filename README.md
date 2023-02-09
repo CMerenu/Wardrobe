@@ -69,6 +69,6 @@
 
 ### **Images:** []()
 
-### **Card Images:** []()
+<!-- ### **Images:** []() -->
 
 ### **Background Image:** []()
