@@ -29,7 +29,7 @@
 
 ### ![](CHD.png)
 
-### ![](ERD.png)
+### ![](ERD2.png)
 
 ### **Objective**
 
