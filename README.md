@@ -27,6 +27,10 @@
 
 ### **_Getting Started_**
 
+### ![](CHD.png)
+
+### ![](ERD.png)
+
 ### **Objective**
 
 ### To track of all the items one has in their closet.
