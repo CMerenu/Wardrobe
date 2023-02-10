@@ -27,9 +27,9 @@
 
 ### **_Getting Started_**
 
-### ![](CHD.png)
+### ![](images/CHD.png)
 
-### ![](ERD2.png)
+### ![](images/ERD3.png)
 
 ### **Objective**
 
