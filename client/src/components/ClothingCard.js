@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ClothingCard = () => {
+const ClothingCard = (props) => {
   return (
     <div className="clothing-card" onClick={props.onClick}>
       <div className="img-wrapper">

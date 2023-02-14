@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TypeCard = () => {
+const TypeCard = (props) => {
   return (
     <div className="type-card" onClick={props.onClick}>
       <div className="img-wrapper">
