@@ -1,10 +1,10 @@
-// import { Search } from 'react-router-dom'
 import axios from 'axios'
 import TypeCard from '../components/TypeCard'
 import ClothingCard from '../components/ClothingCard'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import Search from '../components/Search'
+import { BASE_URL } from './globals'
 
 const Home = () => {
   const [types, setTypes] = useState([])
@@ -14,7 +14,7 @@ const Home = () => {
 
   useEffect(() => {
     const getTypes = async () => {
-      const response = await axios.get(``)
+      const response = await axios.get(`${BASE_URL}`)
       setTypes(response.data.results)
     }
     getTypes()
@@ -22,7 +22,7 @@ const Home = () => {
 
   const getSearchResults = async (e) => {
     e.preventDefault()
-    const response = await axios.get(``)
+    const response = await axios.get(`${BASE_URL}/`)
     setSearchResults(response.data.results)
     toggleSearched(true)
   }
