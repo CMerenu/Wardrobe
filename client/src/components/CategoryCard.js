@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TypeCard = (props) => {
+const CategoryCard = (props) => {
   return (
     <div className="type-card" onClick={props.onClick}>
       <div className="img-wrapper">
@@ -13,4 +13,4 @@ const TypeCard = (props) => {
   )
 }
 
-export default TypeCard
+export default CategoryCard

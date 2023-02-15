@@ -1,58 +1,58 @@
 import axios from 'axios'
-import TypeCard from '../components/TypeCard'
 import ClothingCard from '../components/ClothingCard'
-import { useEffect } from 'react'
-import { useState } from 'react'
-import Search from '../components/Search'
-import { BASE_URL } from './globals'
+import { useEffect, useState } from 'react'
 
 const Home = () => {
-  const [types, setTypes] = useState([])
-  const [searchResults, setSearchResults] = useState([])
-  const [searched, toggleSearched] = useState(false)
-  const [searchQuery, setSearchQuery] = useState('')
+  const [clothes, setClothes] = useState([])
+  const [filteredClothes, setFilteredClothes] = useState([])
+
+  const getClothes = async () => {
+    const response = await axios.get(`http://localhost:3001/api/clothing`)
+
+    setClothes(response.data.clothing)
+    setFilteredClothes(response.data.clothing)
+    console.log(response.data.clothing)
+  }
 
   useEffect(() => {
-    const getTypes = async () => {
-      const response = await axios.get(`${BASE_URL}`)
-      setTypes(response.data.results)
-    }
-    getTypes()
+    getClothes()
   }, [])
 
-  const getSearchResults = async (e) => {
-    e.preventDefault()
-    const response = await axios.get(`${BASE_URL}/`)
-    setSearchResults(response.data.results)
-    toggleSearched(true)
+  const chooseType = (type) => {
+    setFilteredClothes(clothes.filter((clothe) => clothe.category === type))
+    console.log(type)
   }
 
-  const handleChange = (e) => {
-    setSearchQuery(e.target.value)
-  }
+  // const handleChange = (e) => {
+  //   setSearchQuery(e.target.value)
+  // }
 
   return (
     <div className="search">
-      <Search
-        value={searchQuery}
-        onChange={handleChange}
-        onSubmit={getSearchResults}
-      />
-      {searched && (
-        <div>
-          <h1>Search Results</h1>
-          <section className="search-results container-grid">
-            {searchResults.map((result) => (
-              <ClothingCard {...result} image={result.image} />
-            ))}
-          </section>
-        </div>
-      )}
-      <div className="types">
-        <h1>Types</h1>
+      <div>
+        <h1>Categories</h1>
+        <button name="Top" onClick={() => chooseType('Top')}>
+          Tops
+        </button>
+        <button name="Bottom" onClick={() => chooseType('Bottom')}>
+          Bottoms
+        </button>
+        <button name="Accessory" onClick={() => chooseType('Accessory')}>
+          Accessories
+        </button>
+      </div>
+      <div className="clothing">
+        <h1>Clothes</h1>
         <section className="container-grid">
-          {types.map((type) => (
-            <TypeCard name={type.name} image={type.image} />
+          {filteredClothes.map((item) => (
+            <ClothingCard
+              name={item.name}
+              image={item.image}
+              brand={item.brand}
+              size={item.size}
+              color={item.color}
+              category={item.category}
+            />
           ))}
         </section>
       </div>
