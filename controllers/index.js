@@ -51,6 +51,7 @@ const deleteClothing = async (req, res) => {
   try {
     const { id } = req.params
     const deleted = await Clothing.findByIdAndDelete(id)
+    console.log(deleted)
     if (deleted) {
       return res.status(200).send('Clothing item deleted')
     }

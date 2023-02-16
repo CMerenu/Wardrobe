@@ -1,6 +1,14 @@
 import React from 'react'
+import axios from 'axios'
 
 const ClothingCard = (props) => {
+  const deleteClothes = async () => {
+    const response = await axios.delete(
+      `http://localhost:3001/api/clothing/${props.item._id}`
+    )
+    props.getClothes()
+  }
+
   return (
     <div className="clothing-card" onClick={props.onClick}>
       <div className="img-wrapper">
@@ -12,6 +20,7 @@ const ClothingCard = (props) => {
           {props.brand} {props.color} {props.size} {props.category}
         </p>
       </div>
+      <button onClick={deleteClothes}>delete</button>
     </div>
   )
 }

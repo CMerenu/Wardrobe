@@ -18,7 +18,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -34,4 +34,10 @@ header {
   to {
     transform: rotate(360deg);
   }
+}
+.category-button{
+  color: white;
+  height: 50px;
+  background-color: black;
+  opacity: 70%;
 }
