@@ -8,7 +8,8 @@ const Clothing = new Schema(
     color: { type: String, required: true },
     category: { type: String, required: true },
     size: { type: String, required: true },
-    image: { type: String, required: true }
+    image: { type: String, required: true },
+    reviews: [{ type: Schema.Types.ObjectId, ref: 'Review' }]
   },
   { timestamps: true }
 )

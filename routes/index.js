@@ -12,4 +12,7 @@ router.get('/clothing/:id', controllers.getClothingById)
 router.put('/clothing/:id', controllers.updateClothing)
 router.delete('/clothing/:id', controllers.deleteClothing)
 
+router.post('/clothing/:id/review', controllers.createReview)
+
+// router.delete('/clothing/:id/review', controllers.deleteReview)
 module.exports = router

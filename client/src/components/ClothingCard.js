@@ -15,9 +15,11 @@ const ClothingCard = (props) => {
         <img src={props.image} alt="poster" />
       </div>
       <div className="info-wrapper flex-col">
-        <h3>{props.name}</h3>
+        <h3>
+          {props.brand} {props.name}
+        </h3>
         <p>
-          {props.brand} {props.color} {props.size} {props.category}
+          {props.color} {props.category} {props.size}
         </p>
       </div>
       <button onClick={deleteClothes}>delete</button>

@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  background-image:url(https://www.bostoncloset.com/wp-content/uploads/2020/03/Closet-Background.jpg);
+  color:white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #313232;
 }
 
 .App-logo {
@@ -14,14 +19,34 @@
 }
 
 header {
-  background-color: #767f92;
+  /* opacity: 35%; */
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  justify-content: flex-start;
+  font-size: 15px;
+  background-color:transparent;
+  }
+  header nav a {
+    margin: 0 1em;
+    color: white;
+    text-decoration: none;
+    /* background-color: yellow; */
+  }
+  header a:visited {
+    color: white;
+    text-decoration: none;
+    /* background-color: yellow; */
+  }
+  header a:hover {
+    color: green;
+    text-decoration: underline;
+    /* background-color: yellow; */
+  }
+  header a:active {
+    color: blue;
+    text-decoration: none;
+    /* background-color: yellow; */
+  }
 
 .App-link {
   color: #61dafb;
@@ -38,6 +63,40 @@ header {
 .category-button{
   color: white;
   height: 50px;
+  width: 200px;
   background-color: black;
-  opacity: 70%;
+  opacity: 45%;
+}
+.category-button-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.container-grid{
+  max-width: 40%;
+  max-height: 250x;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.container-grid img{
+  width: 140px;
+  height: 175px;
+  justify-content: center;
+  align-items: center;
+}
+/* .container-grid button */
+/* .navUl li NavLink {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+} */
+form {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

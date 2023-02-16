@@ -1,4 +1,5 @@
 const Clothing = require('../models/clothing')
+const Reviews = require('../models/reviews')
 
 const createClothing = async (req, res) => {
   try {
@@ -14,7 +15,7 @@ const createClothing = async (req, res) => {
 
 const getAllClothing = async (req, res) => {
   try {
-    const clothing = await Clothing.find()
+    const clothing = await Clothing.find().populate('reviews')
     return res.status(200).json({ clothing })
   } catch (error) {
     return res.status(500).send(error.message)
@@ -24,7 +25,7 @@ const getAllClothing = async (req, res) => {
 const getClothingById = async (req, res) => {
   try {
     const { id } = req.params
-    const clothing = await Clothing.findById(id)
+    const clothing = await Clothing.findById(id).populate('reviews')
     if (clothing) {
       return res.status(200).json({ clothing })
     }
@@ -61,10 +62,25 @@ const deleteClothing = async (req, res) => {
   }
 }
 
+const createReview = async (req, res) => {
+  try {
+    const review = await new Reviews(req.body)
+    await review.save()
+    const clothing = await Clothing.findById(req.params.id)
+    clothing.reviews.push(review._id)
+    await clothing.save()
+    return res.status(201).json({
+      review
+    })
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
 module.exports = {
   createClothing,
   getAllClothing,
   getClothingById,
   updateClothing,
-  deleteClothing
+  deleteClothing,
+  createReview
 }

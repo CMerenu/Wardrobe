@@ -18,7 +18,7 @@ const UpdateClothes = ({item, getClothes}) => {
 return(
   <div>
     <form onSubmit={handleSubmit}>
-      <label htmlFor="name">Name</label>
+      <label htmlFor="name">Name:</label>
       <input
         id="name"
         type="text"
@@ -28,38 +28,39 @@ return(
       <label htmlFor="brand">Brand:</label>
       <input
         id="brand"
-        type="brand"
+        type="text"
         onChange={handleChange}
         value={updateItem.brand}
       />
       <label htmlFor="color">Color:</label>
       <input
         id="color"
-        type="color"
+        type="text"
         onChange={handleChange}
         value={updateItem.color}
       />
       <label htmlFor="category">Category:</label>
-      <select id="category">
+      <select id="category" onChange={handleChange} value={updateItem.category}>
         <option value="Top">Top</option>
         <option value="Bottom">Bottom</option>
         <option value="Accessory">Accessory</option>
+        <option value="Shoes">Shoes</option>
       </select>
       <label htmlFor="size">Size:</label>
       <input
         id="size"
-        type="size"
+        type="text"
         onChange={handleChange}
         value={updateItem.size}
       />
-      <label htmlFor="image">image:</label>
+      <label htmlFor="image">Image URL:</label>
       <input
         id="image"
-        type="image"
+        type="text"
         onChange={handleChange}
         value={updateItem.image}
       />
-      <button type="submit">Submit</button>
+      <button type="submit">Edit!</button>
     </form>
   </div>
 )
