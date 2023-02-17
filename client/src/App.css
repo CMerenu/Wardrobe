@@ -6,7 +6,7 @@
   background-size: cover;
   background-color: #313232;
   font-family: 'Roboto Condensed', sans-serif;
-  height: 150vh;
+  height: 200vh;
   width: 100vw;
 }
 
@@ -80,13 +80,14 @@ header {
 .container-grid{
   width: 85%;
   max-height: 250x;
-  display:inline-flex;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin: 20px;
 }
 .container-grid img{
-  width: 140px;
+  width: 100px;
   height: 175px;
   justify-content: center;
   align-items: center;
