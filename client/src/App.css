@@ -86,17 +86,27 @@ header {
   justify-content: center;
   align-items: center;
 }
-/* .container-grid button */
-/* .navUl li NavLink {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-} */
 form {
   width: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.dropdown{
+  position: relative;
+  font-family: Arial;
+}
+input[type=text] {
+  background-color: #784889;
+  color: white;
+  transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+  border: 3px solid #555;
+  background-color: lightblue;
+}
+button{
+  color: antiquewhite;
+  background-color: black;
+  border-radius: 50%;
 }

@@ -44,7 +44,7 @@ const AddClothes = () => {
       <label htmlFor="color">Color:</label>
       <input
         id="color"
-        type="color"
+        type="text"
         onChange={handleChange}
         value={formState.color}
       />
@@ -65,7 +65,7 @@ const AddClothes = () => {
       <label htmlFor="image">image:</label>
       <input
         id="image"
-        type="image"
+        type="text"
         onChange={handleChange}
         value={formState.image}
       />
