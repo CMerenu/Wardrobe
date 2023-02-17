@@ -33,28 +33,28 @@ const Wardrobe = () => {
           name="Top"
           onClick={() => chooseCategory('Top')}
         >
-          Tops
+          TOPS
         </button>
         <button
           className="category-button"
           name="Bottom"
           onClick={() => chooseCategory('Bottom')}
         >
-          Bottom
+          BOTTOMS
         </button>
         <button
           className="category-button"
           name="Accessory"
           onClick={() => chooseCategory('Accessory')}
         >
-          Accessories
+          ACCESSORIES
         </button>
         <button
           className="category-button"
           name="Shoes"
           onClick={() => chooseCategory('Shoes')}
         >
-          Shoes
+          SHOES
         </button>
       </div>
       <h1>CLOTHES</h1>

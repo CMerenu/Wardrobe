@@ -16,7 +16,9 @@ const ReviewCard = (props) => {
         <h5>{props.user}</h5>
         <p>{props.comment}</p>
       </div>
-      <button onClick={deleteReview}>delete</button>
+      <button onClick={deleteReview} className="change-button">
+        delete
+      </button>
     </div>
   )
 }

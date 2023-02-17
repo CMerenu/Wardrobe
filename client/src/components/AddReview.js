@@ -42,7 +42,9 @@ const AddReview = (props) => {
         onChange={handleChange}
         value={reviewFormState.comment}
       />
-      <button type="submit">Add Review!</button>
+      <button type="submit" className="change-button">
+        Add Review!
+      </button>
     </form>
   )
 }

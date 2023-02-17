@@ -22,7 +22,9 @@ const ClothingCard = (props) => {
           {props.color} {props.category} {props.size}
         </p>
       </div>
-      <button onClick={deleteClothes}>delete</button>
+      <button onClick={deleteClothes} className="change-button">
+        delete
+      </button>
     </div>
   )
 }

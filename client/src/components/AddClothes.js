@@ -70,7 +70,9 @@ const AddClothes = () => {
           onChange={handleChange}
           value={formState.image}
         />
-        <button type="submit">Submit!</button>
+        <button type="submit" className="change-button">
+          Submit!
+        </button>
       </form>
     </div>
   )
