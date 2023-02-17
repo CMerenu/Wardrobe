@@ -23,7 +23,7 @@
 
 header {
   /* opacity: 35%; */
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: flex-start;
   font-size: 15px;
