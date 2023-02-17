@@ -37,7 +37,7 @@ const AddClothes = () => {
       <label htmlFor="brand">Brand:</label>
       <input
         id="brand"
-        type="brand"
+        type="text"
         onChange={handleChange}
         value={formState.brand}
       />
@@ -58,7 +58,7 @@ const AddClothes = () => {
       <label htmlFor="size">Size:</label>
       <input
         id="size"
-        type="size"
+        type="text"
         onChange={handleChange}
         value={formState.size}
       />

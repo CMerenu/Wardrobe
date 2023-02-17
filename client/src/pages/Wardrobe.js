@@ -57,7 +57,7 @@ const Wardrobe = () => {
           Shoes
         </button>
       </div>
-      <h1>Clothes</h1>
+      <h1>CLOTHES</h1>
       <div className="clothing">
         <section className="container-grid">
           {filteredClothes.map((item) => (
