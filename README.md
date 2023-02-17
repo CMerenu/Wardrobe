@@ -57,6 +57,10 @@
 
 #### ![Image](images/AddClothes.png)
 
+#### **About Screens**
+
+#### ![Image](images/About.png)
+
 ---
 
 ## **Future Updates:**
