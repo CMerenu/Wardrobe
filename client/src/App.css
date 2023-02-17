@@ -95,7 +95,7 @@ header {
 form {
   width: 150px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
