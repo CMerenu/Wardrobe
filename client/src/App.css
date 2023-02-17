@@ -83,7 +83,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: right;
+  align-items: center;
   margin: 20px;
 }
 .container-grid img{
