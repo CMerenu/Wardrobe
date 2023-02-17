@@ -49,14 +49,12 @@ const AddClothes = () => {
           onChange={handleChange}
           value={formState.color}
         />
-        <label
-          htmlFor="category"
+        <label htmlFor="category">Category:</label>
+        <select
+          id="category"
           onChange={handleChange}
           value={updateItem.category}
         >
-          Category:
-        </label>
-        <select id="category">
           <option value="Top">Top</option>
           <option value="Bottom">Bottom</option>
           <option value="Accessory">Accessory</option>
