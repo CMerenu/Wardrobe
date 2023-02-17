@@ -53,7 +53,7 @@ const AddClothes = () => {
         <select
           id="category"
           onChange={handleChange}
-          value={updateItem.category}
+          value={formState.category}
         >
           <option value="Top">Top</option>
           <option value="Bottom">Bottom</option>
