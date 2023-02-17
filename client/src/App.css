@@ -78,10 +78,10 @@ header {
 }
 
 .container-grid{
-  max-width: 40%;
+  width: 85%;
   max-height: 250x;
   display:inline-flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin: 20px;
 }
@@ -96,6 +96,7 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .dropdown{
   position: relative;
