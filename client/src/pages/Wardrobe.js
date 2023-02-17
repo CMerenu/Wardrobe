@@ -26,7 +26,7 @@ const Wardrobe = () => {
 
   return (
     <div>
-      <h1>Categories</h1>
+      <h1>CATEGORIES</h1>
       <div className="category-button-container">
         <button
           className="category-button"
@@ -75,7 +75,12 @@ const Wardrobe = () => {
               <UpdateClothes item={item} getClothes={getClothes} />
               <h4>Reviews</h4>
               {item.reviews.map((review) => (
-                <ReviewCard user={review.user} comment={review.comment} />
+                <ReviewCard
+                  user={review.user}
+                  comment={review.comment}
+                  reviewID={review._id}
+                  getClothes={getClothes}
+                />
               ))}
               <AddReview item={item} getClothes={getClothes} />
             </div>

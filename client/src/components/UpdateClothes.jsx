@@ -60,7 +60,7 @@ return(
         onChange={handleChange}
         value={updateItem.image}
       />
-      <button type="submit">Edit!</button>
+      <button type="submit" className="edit-button">Edit!</button>
     </form>
   </div>
 )

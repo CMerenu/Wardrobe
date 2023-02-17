@@ -6,6 +6,8 @@
   background-size: cover;
   background-color: #313232;
   font-family: 'Roboto Condensed', sans-serif;
+  height: 100vh;
+  width: 100vw;
 }
 
 .App-logo {
@@ -63,8 +65,8 @@ header {
 }
 .category-button{
   color: white;
-  height: 50px;
-  width: 200px;
+  height: 80px;
+  width: 250px;
   background-color: black;
   opacity: 45%;
 }
@@ -72,6 +74,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin: 10px;
 }
 .container-grid{
   max-width: 40%;
@@ -98,7 +101,7 @@ form {
   font-family: Arial;
 }
 input[type=text] {
-  background-color: #784889;
+  background-color:green;
   color: white;
   transition: width 0.4s ease-in-out;
   border: 2px solid rgb(247, 243, 243);
@@ -113,4 +116,14 @@ button{
   background-color: black;
   border-radius: 50%;
   font-family: 'Roboto Condensed', sans-serif;
+}
+.edit-button{
+  width: 50%;
+justify-content: center;
+}
+.About{
+  background-image:url(https://www.bostoncloset.com/wp-content/uploads/2020/03/Closet-Background.jpg);
+  background-color: #555;
+  height: 100vh;
+  width: 100vw;
 }

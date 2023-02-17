@@ -3,8 +3,9 @@ import axios from 'axios'
 
 const ReviewCard = (props) => {
   const deleteReview = async () => {
+    console.log(props)
     const response = await axios.delete(
-      `http://localhost:3001/api/clothing/${props.item.comment}`
+      `http://localhost:3001/api/review/${props.reviewID}`
     )
     props.getClothes()
   }

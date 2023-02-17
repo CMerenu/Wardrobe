@@ -14,5 +14,5 @@ router.delete('/clothing/:id', controllers.deleteClothing)
 
 router.post('/clothing/:id/review', controllers.createReview)
 
-// router.delete('/clothing/:id/review', controllers.deleteReview)
+router.delete('/review/:id', controllers.deleteReview)
 module.exports = router

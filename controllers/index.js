@@ -76,11 +76,25 @@ const createReview = async (req, res) => {
     return res.status(500).send(error.message)
   }
 }
+const deleteReview = async (req, res) => {
+  try {
+    const { id } = req.params
+    const deleted = await Reviews.findByIdAndDelete(id)
+    console.log(deleted)
+    if (deleted) {
+      return res.status(200).send('Review is deleted')
+    }
+    throw new Error('Review not found')
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
 module.exports = {
   createClothing,
   getAllClothing,
   getClothingById,
   updateClothing,
   deleteClothing,
-  createReview
+  createReview,
+  deleteReview
 }
