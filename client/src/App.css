@@ -82,12 +82,12 @@ header {
   max-height: 250x;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center space-between;
   align-items: center;
   margin: 20px;
 }
 .container-grid img{
-  width: 100px;
+  width: 155px;
   height: 175px;
   justify-content: center;
   align-items: center;
