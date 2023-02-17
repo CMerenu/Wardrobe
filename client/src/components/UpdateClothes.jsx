@@ -12,8 +12,7 @@ const UpdateClothes = ({item, getClothes}) => {
     event.preventDefault()
     
     await axios.put(`http://localhost:3001/api/clothing/${updateItem._id}`, updateItem)
-  
-    getClothes()
+  getClothes()
   }
 return(
   <div>

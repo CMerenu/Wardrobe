@@ -49,7 +49,7 @@
 
 ### **_Screenshots_**
 
-#### ** Wardrobe Screen**
+#### **Wardrobe Screen**
 
 #### ![Image](images/Wardrobe.png)
 
@@ -57,13 +57,11 @@
 
 #### ![Image](images/AddClothes.png)
 
-#### ![Image]()
-
 ---
 
 ## **Future Updates:**
 
-- [ ] Feature that help clients put clothing items together (Suggestions)
+- Feature that help clients put clothing items together (Suggestions)
 
 ---
 
@@ -71,6 +69,6 @@
 
 ### **Images:** [Sole Collector](https://solecollector.com/news/2015/09/celebrity-sneaker-closets)
 
-### **Images:** []()
+### **Images:** [Google]()
 
 ### **Background Image:** [Empty Closet](https://www.bostoncloset.com/wp-content/uploads/2020/03/Closet-Background.jpg)
