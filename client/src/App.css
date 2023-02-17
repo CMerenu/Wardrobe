@@ -6,7 +6,7 @@
   background-size: cover;
   background-color: #313232;
   font-family: 'Roboto Condensed', sans-serif;
-  height: 100vh;
+  height: 150vh;
   width: 100vw;
 }
 
@@ -74,7 +74,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin: 10px;
+  margin: 5px;
 }
 .container-grid{
   max-width: 40%;
@@ -117,8 +117,8 @@ button{
   border-radius: 50%;
   font-family: 'Roboto Condensed', sans-serif;
 }
-.edit-button{
-  width: 50%;
+.change-button{
+width: 50%;
 justify-content: center;
 }
 .About{
@@ -126,4 +126,8 @@ justify-content: center;
   background-color: #555;
   height: 100vh;
   width: 100vw;
+}
+.Add-clothes{
+  justify-content: center;
+  align-items: center;
 }

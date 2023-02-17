@@ -26,51 +26,53 @@ const AddClothes = () => {
   }
   // Note that we need to use `htmlFor` instead of `for` in JSX
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="name">Name</label>
-      <input
-        id="name"
-        type="text"
-        onChange={handleChange}
-        value={formState.name}
-      />
-      <label htmlFor="brand">Brand:</label>
-      <input
-        id="brand"
-        type="text"
-        onChange={handleChange}
-        value={formState.brand}
-      />
-      <label htmlFor="color">Color:</label>
-      <input
-        id="color"
-        type="text"
-        onChange={handleChange}
-        value={formState.color}
-      />
-      <label htmlFor="category">Category:</label>
-      <select id="category">
-        <option value="Top">Top</option>
-        <option value="Bottom">Bottom</option>
-        <option value="Accessory">Accessory</option>
-        <option value="Shoes">Shoes</option>
-      </select>
-      <label htmlFor="size">Size:</label>
-      <input
-        id="size"
-        type="text"
-        onChange={handleChange}
-        value={formState.size}
-      />
-      <label htmlFor="image">image:</label>
-      <input
-        id="image"
-        type="text"
-        onChange={handleChange}
-        value={formState.image}
-      />
-      <button type="submit">Submit!</button>
-    </form>
+    <div className="Add-clothes">
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="name">Name</label>
+        <input
+          id="name"
+          type="text"
+          onChange={handleChange}
+          value={formState.name}
+        />
+        <label htmlFor="brand">Brand:</label>
+        <input
+          id="brand"
+          type="text"
+          onChange={handleChange}
+          value={formState.brand}
+        />
+        <label htmlFor="color">Color:</label>
+        <input
+          id="color"
+          type="text"
+          onChange={handleChange}
+          value={formState.color}
+        />
+        <label htmlFor="category">Category:</label>
+        <select id="category">
+          <option value="Top">Top</option>
+          <option value="Bottom">Bottom</option>
+          <option value="Accessory">Accessory</option>
+          <option value="Shoes">Shoes</option>
+        </select>
+        <label htmlFor="size">Size:</label>
+        <input
+          id="size"
+          type="text"
+          onChange={handleChange}
+          value={formState.size}
+        />
+        <label htmlFor="image">image:</label>
+        <input
+          id="image"
+          type="text"
+          onChange={handleChange}
+          value={formState.image}
+        />
+        <button type="submit">Submit!</button>
+      </form>
+    </div>
   )
 }
 

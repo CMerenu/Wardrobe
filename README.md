@@ -49,15 +49,15 @@
 
 ### **_Screenshots_**
 
-<!-- #### ** Home Screen** -->
+#### ** Wardrobe Screen**
 
-<!-- #### ![Image]() -->
+#### ![Image](images/Wardrobe.png)
 
-<!-- #### ** Wardrobe Screens** -->
+#### **Add Clothes Screens**
 
-<!-- #### ![Image]() -->
+#### ![Image](images/AddClothes.png)
 
-<!-- #### ![Image]() -->
+#### ![Image]()
 
 ---
 
@@ -71,6 +71,6 @@
 
 ### **Images:** [Sole Collector](https://solecollector.com/news/2015/09/celebrity-sneaker-closets)
 
-<!-- ### **Images:** []() -->
+### **Images:** []()
 
-<!-- ### **Background Image:**  -->
+### **Background Image:** [Empty Closet](https://www.bostoncloset.com/wp-content/uploads/2020/03/Closet-Background.jpg)
